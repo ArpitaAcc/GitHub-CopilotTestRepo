@@ -24,7 +24,7 @@ function Home() {
               </Button>
             </Col>
             <Col md={4} className="text-center mt-4 mt-md-0">
-              <img src="/assets/fitness-hero.svg" alt="Fitness hero" className="img-fluid home-hero" />
+              <img src="/octofitapp-small.svg" alt="OctoFit logo" className="img-fluid home-hero" />
             </Col>
           </Row>
         </Card.Body>
@@ -40,7 +40,8 @@ function App() {
     <Router>
       <Navbar bg="dark" variant="dark" expand="lg" sticky="top" className="shadow-sm">
         <Container>
-          <Navbar.Brand as={Link} to="/" className="brand-heading">
+          <Navbar.Brand as={Link} to="/" className="brand-heading d-flex align-items-center">
+            <img src="/octofitapp-small.svg" alt="OctoFit logo" className="app-logo me-2" />
             OctoFit Tracker
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="main-navbar" />
