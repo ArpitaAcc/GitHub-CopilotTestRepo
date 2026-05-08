@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="OctoFit Tracker Favicon">
+  <defs>
+    <linearGradient id="fbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c5cff"/>
+      <stop offset="100%" stop-color="#5b8dff"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#fbg)"/>
+  <path d="M20 22c0-5 6-9 12-9s12 4 12 9" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+  <path d="M24 42c3-5 10-5 14 0" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+</svg>

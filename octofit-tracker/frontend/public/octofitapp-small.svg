@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="OctoFit Tracker Logo">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c5cff"/>
+      <stop offset="100%" stop-color="#5b8dff"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd15c"/>
+      <stop offset="100%" stop-color="#ff6f8f"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#bg)"/>
+  <path d="M18 44c0-5 6-9 13-9s13 4 13 9" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+  <path d="M20 24c0-4 5-8 12-8s12 4 12 8" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="22" cy="24" r="4" fill="url(#accent)"/>
+  <circle cx="42" cy="24" r="4" fill="url(#accent)"/>
+  <path d="M24 40c2-2 6-2 10 0" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+</svg>
