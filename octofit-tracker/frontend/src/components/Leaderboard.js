@@ -127,7 +127,7 @@ const Leaderboard = () => {
 
       <Modal show={showModal} onHide={handleCloseModal} centered>
         <Modal.Header closeButton>
-          <Modal.Title>Leaderboard detail</Modal.Title>
+          <Modal.Title>Details</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           {selectedEntry ? (

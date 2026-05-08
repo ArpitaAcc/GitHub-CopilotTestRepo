@@ -97,7 +97,7 @@ const Workouts = () => {
                   <th>User</th>
                   <th>Workout</th>
                   <th className="text-center">Reps</th>
-                  <th className="text-center">Action</th>
+                  <th className="text-center">Actions</th>
                 </tr>
               </thead>
               <tbody>
@@ -121,7 +121,7 @@ const Workouts = () => {
 
       <Modal show={showModal} onHide={handleCloseModal} centered>
         <Modal.Header closeButton>
-          <Modal.Title>Workout details</Modal.Title>
+          <Modal.Title>Details</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           {selectedWorkout ? (

@@ -91,7 +91,7 @@ const Users = () => {
                   <th>Name</th>
                   <th>Email</th>
                   <th className="text-center">Team</th>
-                  <th className="text-center">Action</th>
+                  <th className="text-center">Actions</th>
                 </tr>
               </thead>
               <tbody>
@@ -115,7 +115,7 @@ const Users = () => {
 
       <Modal show={showModal} onHide={handleCloseModal} centered>
         <Modal.Header closeButton>
-          <Modal.Title>User details</Modal.Title>
+          <Modal.Title>Details</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           {selectedUser ? (
