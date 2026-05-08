@@ -1,0 +1,164 @@
+/* App Styling */
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Navigation Styling */
+.navbar {
+  background: linear-gradient(90deg, #2c3e50 0%, #34495e 100%) !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transition: all 0.3s ease;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.05);
+}
+
+.nav-link {
+  color: #ecf0f1 !important;
+  font-weight: 500;
+  margin: 0 8px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #59b3e8 !important;
+  transform: translateY(-2px);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Header Styling */
+.App-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 20px;
+  margin: 40px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  animation: fadeInDown 0.6s ease;
+}
+
+.App-header h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px;
+}
+
+.App-header p {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  margin: 0;
+}
+
+/* Container Styling */
+.container-fluid,
+.container {
+  background-color: transparent !important;
+}
+
+/* Card Styling */
+.card {
+  border: none;
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.95);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2) !important;
+}
+
+.card-title {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.card-body {
+  border-radius: 15px;
+}
+
+/* Table Styling */
+.table {
+  background-color: transparent;
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+.table thead {
+  background: linear-gradient(90deg, #2c3e50 0%, #34495e 100%);
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.85rem;
+}
+
+.table thead th {
+  border: none;
+  padding: 15px 10px;
+  vertical-align: middle;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid #ecf0f1;
+  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.table tbody tr:hover {
+  background-color: rgba(102, 126, 234, 0.1);
+  transform: scale(1.01);
+  box-shadow: inset 0 0 10px rgba(102, 126, 234, 0.1);
+}
+
+.table tbody td {
+  padding: 12px 10px;
+  vertical-align: middle;
+  border: none;
+}
+
+.table-warning {
+  background-color: rgba(255, 193, 7, 0.15) !important;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: rgba(255, 255, 255, 0.5);
+}\n/* Badge Styling */\n.badge {\n  padding: 8px 12px;\n  font-weight: 600;\n  border-radius: 20px;\n  text-transform: uppercase;\n  letter-spacing: 0.5px;\n  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);\n}\n\n/* Alert Styling */\n.alert {\n  border: none;\n  border-radius: 15px;\n  backdrop-filter: blur(10px);\n  margin-bottom: 20px;\n}\n\n.alert-info {\n  background-color: rgba(58, 123, 213, 0.2);\n  color: #2c3e50;\n  border-left: 4px solid #3a7bd5;\n}\n\n.alert-danger {\n  background-color: rgba(231, 76, 60, 0.2);\n  color: #c0392b;\n  border-left: 4px solid #e74c3c;\n}\n\n/* Spinner Styling */\n.spinner-border {\n  color: white;\n  width: 2rem;\n  height: 2rem;\n  border-width: 3px;\n}\n\n/* Animations */\n@keyframes fadeInDown {\n  from {\n    opacity: 0;\n    transform: translateY(-30px);\n  }\n  to {\n    opacity: 1;\n    transform: translateY(0);\n  }\n}\n\n@keyframes slideInLeft {\n  from {\n    opacity: 0;\n    transform: translateX(-30px);\n  }\n  to {\n    opacity: 1;\n    transform: translateX(0);\n  }\n}\n\n/* Links Styling */\na {\n  color: #667eea;\n  text-decoration: none;\n  font-weight: 500;\n  transition: all 0.3s ease;\n  position: relative;\n}\n\na:hover {\n  color: #764ba2;\n  text-decoration: none;\n}\n\na::after {\n  content: '';\n  position: absolute;\n  width: 0;\n  height: 2px;\n  bottom: -3px;\n  left: 0;\n  background-color: #764ba2;\n  transition: width 0.3s ease;\n}\n\na:hover::after {\n  width: 100%;\n}\n\n/* Responsive Design */\n@media (max-width: 768px) {\n  .App-header {\n    min-height: 300px;\n    margin: 20px;\n  }\n\n  .App-header h1 {\n    font-size: 2rem;\n  }\n\n  .App-header p {\n    font-size: 1rem;\n  }\n\n  .nav-link {\n    margin: 5px 0;\n  }\n\n  .table-responsive {\n    font-size: 0.9rem;\n  }\n}\n\n/* Utilities */\n.ms-3 {\n  margin-left: 1rem;\n}\n\n.mb-0 {\n  margin-bottom: 0;\n}\n\n.mb-4 {\n  margin-bottom: 1.5rem;\n}\n\n.me-3 {\n  margin-right: 1rem;\n}\n\n.mt-4 {\n  margin-top: 1.5rem;\n}\n\n.d-flex {\n  display: flex;\n}\n\n.align-items-center {\n  align-items: center;\n}\n\n.flex-grow-1 {\n  flex-grow: 1;\n}\n\n.text-center {\n  text-align: center;\n}\n\n.shadow-sm {\n  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1) !important;\n}

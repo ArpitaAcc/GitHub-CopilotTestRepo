@@ -14,10 +14,11 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import path, include, re_path
 from rest_framework import routers
+from rest_framework.response import Response
 
-from .views import UserViewSet, TeamViewSet, ActivityViewSet, LeaderboardViewSet, WorkoutViewSet, api_root
+from .views import UserViewSet, TeamViewSet, ActivityViewSet, LeaderboardViewSet, WorkoutViewSet
 import os
 
 
@@ -34,7 +35,14 @@ def custom_api_root(request, format=None):
         base_url = f"https://{codespace_name}-8000.app.github.dev/api/"
     else:
         base_url = request.build_absolute_uri('/api/')
-    return api_root(request, format=format, base_url=base_url)
+    
+    return Response({
+        'users': f'{base_url}users/',
+        'teams': f'{base_url}teams/',
+        'activities': f'{base_url}activities/',
+        'leaderboard': f'{base_url}leaderboard/',
+        'workouts': f'{base_url}workouts/',
+    })
 
 from django.urls import re_path
 
