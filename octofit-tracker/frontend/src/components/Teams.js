@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Alert, Spinner, Card, Badge, Button, Modal, Form } from 'react-bootstrap';
+import { getApiUrl } from '../utils/apiHelper';
 
 const Teams = () => {
   const [teams, setTeams] = useState([]);
@@ -15,10 +16,7 @@ const Teams = () => {
 
   const fetchTeams = async () => {
     try {
-      const codespace = process.env.REACT_APP_CODESPACE_NAME;
-      const protocol = codespace ? 'https' : 'http';
-      const host = codespace ? `${codespace}-8000.app.github.dev` : 'localhost:8000';
-      const url = `${protocol}://${host}/api/teams/`;
+      const url = getApiUrl('teams');
       console.log('Fetching teams from:', url);
 
       const response = await fetch(url);

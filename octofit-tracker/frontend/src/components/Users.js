@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Table, Alert, Spinner, Card, Badge, Button, Modal, Form, Row, Col } from 'react-bootstrap';
+import { getApiUrl } from '../utils/apiHelper';
 
 const Users = () => {
   const [users, setUsers] = useState([]);
@@ -15,10 +16,7 @@ const Users = () => {
 
   const fetchUsers = async () => {
     try {
-      const codespace = process.env.REACT_APP_CODESPACE_NAME;
-      const protocol = codespace ? 'https' : 'http';
-      const host = codespace ? `${codespace}-8000.app.github.dev` : 'localhost:8000';
-      const url = `${protocol}://${host}/api/users/`;
+      const url = getApiUrl('users');
       console.log('Fetching users from:', url);
 
       const response = await fetch(url);
